@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Units and Color Models in CSS</title>
+   <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> <!-- Подключение Google Fonts: Playfair Display (для заголовка) и Roboto (для текста) -->
+
+</head>
+<body>
+
+  <!-- div: универсальный блочный контейнер -->
+  <div class="block">Это блочный элемент (div)</div>
+
+  <!-- p: абзац текста, тоже блочный элемент -->
+  <p class="block">Это блочный элемент (p)</p>
+
+  <!-- h1: заголовок 1-го уровня, всегда блочный -->
+  <h1 class="block">Это блочный элемент (h1)</h1>
+
+  <!-- ul: список (неупорядоченный), атрибут class внутри тега -->
+  <ul class="block">Это блочный элемент (ul)</ul>
+
+  <!-- ol: упорядоченный список -->
+  <ol class="block">Это блочный элемент (ol)</ol>
+
+  <!-- li: элемент списка -->
+  <li class="block">Это блочный элемент (li)</li>
+
+  <!-- section: логический раздел страницы -->
+  <section class="block">Это блочный элемент (section)</section>
+
+  <!-- article: отдельный материал/публикация -->
+  <article class="block">Это блочный элемент (article)</article>
+
+  <!-- header: шапка страницы или раздела -->
+  <header class="block">Это блочный элемент (header)</header>
+
+  <!-- footer: подвал страницы или раздела -->
+  <footer class="block">Это блочный элемент (footer)</footer>
+
+  <!-- nav: блок для навигации -->
+  <nav class="block">Это блочный элемент (nav)</nav>
+
+
+
+  <!-- span: универсимый строчный контейнер (без смысла, просто для обертки текста) -->
+  <span class="inline">Это строчный элемент (span)</span>
+
+  <!-- a: ссылка, по умолчанию кликабельна и ведёт на адрес из href -->
+  <a href="#" class="inline">Это строчный элемент (a)</a>
+
+  <!-- strong: выделяет текст как важный, браузеры делают его жирным -->
+  <strong class="inline">Это строчный элемент (strong)</strong>
+
+  <!-- img: вставка изображения (самозакрывающийся тег, без </img>) -->
+  <img src="https://via.placeholder.com/40" alt="Пример изображения" class="inline">
+
+  <!-- em: выделение текста курсивом (подчеркивает важность/интонацию) -->
+  <em class="inline">Это строчный элемент (em)</em>
+
+  <!-- input: поле для ввода текста или других данных (самозакрывающийся тег, без </input>) -->
+  <input type="text" class="inline" value="Строчный input">
+
+  <!-- label: подпись к input, по клику на label фокус переходит к полю -->
+  <label class="inline" for="field">Это строчный элемент (label)</label>
+  <input type="text" id="field" class="inline">
+
+
+  <h2>Пример изменения display</h2>
+
+  <div class="example">
+    <!-- span по умолчанию (строчный) -->
+    <span class="inline">Обычный span (строчный)</span>
+    <span class="inline">Рядом с другим span</span>
+  </div>
+
+  <div class="example">
+    <!-- span, превращенный в блочный -->
+    <span class="inline-to-block">Этот span стал блочным (занимает всю ширину)</span>
+    <span class="inline-to-block">И второй span-блок встал ниже</span>
+  </div>
+
+  <div class="example">
+    <!-- div по умолчанию (блочный) -->
+    <div class="block">Обычный div (блочный, всегда с новой строки)</div>
+    <div class="block">Второй div идёт ниже</div>
+  </div>
+
+  <div class="example">
+    <!-- div, превращенный в строчный -->
+    <div class="block-to-inline">Этот div стал строчным</div>
+    <div class="block-to-inline">И теперь div'ы стоят рядом</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+     /* Оформляем класс .block, чтобы визуально видеть каждый элемент */
+    .block {
+      border: 2px solid blue;   /* синяя рамка вокруг элемента */
+      margin: 10px 0;          /* отступы сверху и снизу */
+      padding: 10px;           /* внутренние отступы */
+      background: #f0f8ff;     /* светло-голубой фон */
+    }
+
+    h1.block {
+    text-align: center;      /* выравнивание текста по центру */
+    }
+
+    .inline {
+     background-color: lightgreen;
+     margin: 0 5px;
+     padding: 5px;
+   }
+
+
+    /* Стиль для строчных элементов */
+    .inline {
+      border: 1px dashed red;   /* пунктирная красная рамка */
+      margin: 5px;             /* небольшой внешний отступ */
+      padding: 3px;            /* внутренние отступы */
+      background: #fff0f0;     /* розоватый фон */
+    }
+
+
+    
+    /* Для наглядности */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .example {
+      margin: 20px 0;
+    }
+
+    .inline {
+      display: inline; /* обычное поведение для span */
+      background-color: lightgreen;
+      border: 2px dashed green;
+      padding: 5px;
+    }
+
+    .inline-to-block {
+      display: block; /* span стал блочным */
+      background-color: lightcoral;
+      border: 2px solid red;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    .block {
+      display: block; /* обычное поведение для div */
+      background-color: lightblue;
+      border: 2px dashed blue;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .block-to-inline {
+      display: inline; /* div стал строчным */
+      background-color: lightyellow;
+      border: 2px solid orange;
+      margin: 0 5px;
+      padding: 5px;
+    }

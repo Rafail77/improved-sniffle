@@ -66,3 +66,20 @@
       margin: 0 5px;
       padding: 5px;
     }
+
+/* Стили для кнопки запуска музыки */
+#playBtn {
+  font-size: 18px;             /* Размер текста */
+  padding: 10px 20px;          /* Внутренние отступы */
+  border: none;                /* Убираем стандартную рамку */
+  background-color: #4a90e2;   /* Синий фон */
+  color: white;                /* Белый текст */
+  border-radius: 8px;          /* Скругляем углы */
+  cursor: pointer;             /* При наведении появляется "рука" */
+  transition: background 0.3s; /* Плавное изменение фона при наведении */
+}
+
+/* Эффект при наведении на кнопку */
+#playBtn:hover {
+  background-color: #357ab7;   /* Темно-синий фон */
+}

@@ -95,21 +95,28 @@
   </div>
 
 
+<!-- Заголовок страницы -->
+  <h1>Пример с музыкой</h1>
+
+  <!-- Кнопка: по нажатию запускается музыка -->
   <button id="playBtn">▶ Включить музыку</button>
 
-<audio id="bgMusic" loop>
-  <source src="0033 - Baby's Gang - Challenger.mp3" type="audio/mpeg">
-</audio>
+  <!-- Тег <audio> для вставки музыки -->
+  <!-- 
+    id="bgMusic" — даём имя, чтобы найти этот элемент из JavaScript
+    autoplay — музыка готова к автоматическому запуску
+    loop — повторяет трек по кругу
+    muted — включаем "без звука", чтобы браузер разрешил автозапуск
+  -->
+  <audio id="bgMusic" autoplay loop muted>
+    <!-- Указываем путь к файлу с музыкой -->
+    <source src="0033 - Baby's Gang - Challenger.mp3" type="audio/mpeg">
+    <!-- Текст на случай, если браузер не поддерживает аудио -->
+    Ваш браузер не поддерживает аудио.
+  </audio>
 
-<script>
-  const btn = document.getElementById("playBtn");
-  const music = document.getElementById("bgMusic");
-
-  btn.addEventListener("click", () => {
-    music.play();
-    btn.style.display = "none"; // скрыть кнопку после запуска
-  });
-</script>
+  <!-- Подключаем JavaScript-файл (script.js) -->
+  <script src="script.js"></script>
 
 </body>
 </html>

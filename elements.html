@@ -94,5 +94,22 @@
     <div class="block-to-inline">И теперь div'ы стоят рядом</div>
   </div>
 
+
+  <button id="playBtn">▶ Включить музыку</button>
+
+<audio id="bgMusic" loop>
+  <source src="0033 - Baby's Gang - Challenger.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const btn = document.getElementById("playBtn");
+  const music = document.getElementById("bgMusic");
+
+  btn.addEventListener("click", () => {
+    music.play();
+    btn.style.display = "none"; // скрыть кнопку после запуска
+  });
+</script>
+
 </body>
 </html>
